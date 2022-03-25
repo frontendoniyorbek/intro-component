@@ -18,7 +18,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     font-family: "Arial",sans-serif;
-    background-color: #fff;
+    background-color:#fff;
     color: #222;
 }
 
@@ -30,7 +30,7 @@ img{
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1240px;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: auto;
@@ -40,4 +40,85 @@ img{
 /* MAIN-CONTENT */
 .main-content{
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.global-wrapper-container {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fff;
+}
+
+
+/* HERO */
+.hero {
+    width: 100%;
+    max-width: 570px;
+    border-radius:20px 20px 0 0 ;
+    background-image: url(../img/content.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.hero-global{
+    padding-left: 60px;
+}
+
+.hero-global-link{
+    padding-top: 55px;
+}
+.hero-link {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    border:1px solid #fff;
+    border-radius: 41px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-link:hover{
+    opacity: 0.8;
+}
+
+.hero-link:active{
+    opacity: 0.6;
+}
+
+.hero-content {
+    width: 389px;
+}
+
+.hero-heading {
+    margin-top: 0;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.hero-text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 203px;
+}
+
+.hero::after{
+    display: block;
+    background-color: #4DC490;
+    color: #fff;
+    padding:29px 145px 28px 144px;
+    border-radius: 0px 0px 20px 20px;
+    content: "Try it free 7 days, then $20/mo";
 }
