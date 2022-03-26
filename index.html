@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
 
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
     <!-- STAYLESHEETS -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/stayles.css">
@@ -15,13 +20,30 @@
         <div class="global-wrapper-container container">
             <div class="hero">
                 <div class="hero-global">
-                    <div class="hero-global-link"><a class="hero-link" href="#">frontend and backend</a></div>
+                    <div class="hero-global-link">
+                        <a class="hero-link" href="#">frontend and backend</a>
+                    </div>
                     <div class="hero-content">
                         <h1 class="hero-heading">Learn to program by watching professionals</h1>
                         <p class="hero-text">See how experienced developers solve problems in real time</p>
                     </div>
                 </div>
             </div>
+
+            <!-- SITE-RIGHT -->
+            <section class="site-right">
+                <div class="site-right-container container">
+                    <h2 class="site-right-heading">Sign up for the course and get free 7 days</h2>
+                    <form class="site-form" >
+                        <input class="site-input" type="text" aria-label="Firs Name" placeholder="Firs Name" required>
+                        <input class="site-input" type="text" aria-label="Last Name" placeholder="Last Name" required>
+                        <input class="site-input" type="email" aria-label="Email Address" placeholder="Email Address" required>
+                        <input class="site-input" type="password" aria-label="Password" placeholder="Password" required>
+                        <button class="site-right-link" type="submit">Claim your free trial</button>
+                    </form>
+                    <p class="site-right-text">By clicking the button, you are agreeing to our Terms and Services</p>
+                </div>
+            </section>
         </div>
     </main>
 
