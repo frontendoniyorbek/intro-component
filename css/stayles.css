@@ -1,3 +1,52 @@
+/* FONTS */
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Inter-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Inter-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* CUSTOM PROPS */
+:root{
+    --body-bg: #f1f4ff;
+    --green: #4dc490;
+    --purple:#655af2;
+    --red:#f03535;
+    --text-color: #000;
+}
+
+
 /* GLOBAL */
 html{
     box-sizing: border-box;
@@ -20,10 +69,9 @@ body{
     height: 100%;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
     font-family:"Inter", "Arial",sans-serif;
-    background-color:#E7E7E7;
-    color: #222;
+    background-color: var(--body-bg);
+    color: var(--text-color);
 }
 
 img{
@@ -34,9 +82,9 @@ img{
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1240px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1192px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,187 +92,139 @@ img{
 /* MAIN-CONTENT */
 .main-content{
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.global-wrapper-container {
-    display: flex;
-    flex-grow: 1;
-    width: 100%;
-    max-width: 1152px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
-
 /* HERO */
+.intro-page{
+    display: flex;
+}
+
 .hero {
+    --text-color:#fff;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 570px;
+    border-radius:20px;
+    overflow: hidden;
+    color: var(--text-color);
 }
 
-.hero-global{
-    border:1px solid #fff;
-    padding-left: 60px;
-    border-radius:20px 20px 0 0;
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 55px 60px;
+    background-color: #222;
     background-image: url(../img/rectangle.jpg);
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position:center left;
-    background-size:content;
 }
 
-.hero-global-text{
-    padding-top: 55px;
-}
-.hero-texts {
-    display: inline-block;
+.hero-badge {
     padding: 5px 15px;
-    margin-top: 0;
-    margin-bottom: 60px;
-    border:1px solid #fff;
-    border-radius: 41px;
-    color: #fff;
-    font-style: normal;
-    text-align: center;
     font-weight: 500;
     font-size: 14px;
-    line-height: 17px;
-}
-
-.hero-content {
-    width: 389px;
+    line-height: normal;
+    margin-bottom: 60px;
+    border-radius: 41px;
+    border: 1px solid var(--text-color);
 }
 
 .hero-heading {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 46px;
     margin-top: 0;
-    color: #fff;
     margin-bottom: 25px;
-    font-weight: 700;
     font-size: 36px;
     line-height: 46px;
 }
 
 .hero-text {
-    font-style: normal;
-    font-weight: 400;
+    margin: 0;
     font-size: 16px;
     line-height: 26px;
-    color: #fff;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    margin-top: 0;
-    margin-bottom: 203px;
 }
 
-.hero-link{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 29px 145px;
-    background-color: #4DC490;
-    border-radius: 0px 0px 20px 20px;
-    font-style: normal;
+.hero-botton {
+    padding: 28px;
+    background-color:var(--green);
     font-size: 19px;
-    font-weight: bold;
-    line-height: 2.3;
     text-align: center;
 }
 
-.hero-button-text{
-    font-weight: 400;
-}
 
-/* SITE-RIGHT */
-.site-right{
+/* SIGNUP-FORM */
+.signup-form {
     width: 100%;
     max-width: 570px;
-    background-color: #fff;
-    border-radius: 20px;
+    padding: 55px 60px 40px;
     margin-left: 12px;
+    border-radius:20px;
+    overflow: hidden;
+    background-color: #fff;
 }
 
-.site-right-container{
-    padding-top: 40px;
-    padding-bottom: 4text
-}
-
-.site-right-heading{
-    font-weight: 600;
+.signup-form-heading {
+    margin-top: 0;
+    margin-bottom: 65px;
     font-size: 32px;
     line-height: 42px;
-    color: #222;
-    margin-top: 10;
-    margin-bottom: 80px;
+    font-weight: 600;
 }
 
-
-/* FORM */
-.site-input {
-    border:0;
-    border-bottom: 1px solid #555;
-    width: 450px;
-    margin-top: 0;
-    margin-bottom: 35px;
-    padding-bottom: 14px;
-}
-
-.site-input:hover{
-    border-bottom:1px solid #000;
-}
-
-.site-input:active{
-    opacity: 0.6;
-}
-
-.site-right-button {
+.signup-form-fields {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 149px;
-    border:none;
-    margin-top: 28px;
+    flex-direction:column;
+    margin-bottom: 65px;
+}
+
+.signup-form-field:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.signup-form-field {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    border:0;
+    border-bottom:1px solid #555;
+    color: #555;
+}
+
+.signup-form-field:focus{
+    border-color: #000;
+    font-weight: 600;
+    color: #000;
+}
+
+.signup-form-submit {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0;
     margin-bottom: 8px;
-    text-decoration: none;
+    border:0;
+    border-radius: 10px;
+    background-color: var(--purple);
+    padding: 20px 149px;
     color: #fff;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    background-color: #655AF2;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
-.site-right-button:hover{
-    background-color: #3A2BF8;
-}
-
-.site-right-button:active{
-    opacity: 0.6;
-}
-
-.site-right-text {
+.signup-form-notice {
     font-size: 11px;
     line-height: 15px;
-    color: #555;
-    margin-top: 0;
+    text-align: center;
 }
 
-.site-right-link{
-    color: #F03535;
-    text-decoration: none;
+.signup-form-notice-link {
+    font-weight: 500;
+    color: var(--red);
 }
-
-
-
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
