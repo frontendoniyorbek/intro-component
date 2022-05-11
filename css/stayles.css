@@ -97,7 +97,7 @@ img{
     padding-bottom: 80px;
 }
 
-/* HERO */
+/* HERO*/
 .intro-page{
     display: flex;
 }
@@ -113,7 +113,7 @@ img{
     color: var(--text-color);
 }
 
-.hero-main {
+.hero__main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -126,7 +126,7 @@ img{
     background-repeat: no-repeat;
 }
 
-.hero-badge {
+.hero__badge {
     padding: 5px 15px;
     font-weight: 500;
     font-size: 14px;
@@ -136,20 +136,20 @@ img{
     border: 1px solid var(--text-color);
 }
 
-.hero-heading {
+.hero__heading {
     margin-top: 0;
     margin-bottom: 25px;
     font-size: 36px;
     line-height: 46px;
 }
 
-.hero-text {
+.hero__text {
     margin: 0;
     font-size: 16px;
     line-height: 26px;
 }
 
-.hero-botton {
+.hero__botton {
     padding: 28px;
     background-color:var(--green);
     font-size: 19px;
@@ -157,7 +157,7 @@ img{
 }
 
 
-/* SIGNUP-FORM */
+/* SIGNUP-FORM*/
 .signup-form {
     width: 100%;
     max-width: 570px;
@@ -168,7 +168,7 @@ img{
     background-color: #fff;
 }
 
-.signup-form-heading {
+.signup-form__heading {
     margin-top: 0;
     margin-bottom: 65px;
     font-size: 32px;
@@ -176,17 +176,17 @@ img{
     font-weight: 600;
 }
 
-.signup-form-fields {
+.signup-form__fields {
     display: flex;
     flex-direction:column;
     margin-bottom: 65px;
 }
 
-.signup-form-field:not(:last-child){
+.signup-form__field:not(:last-child){
     margin-bottom: 20px;
 }
 
-.signup-form-field {
+.signup-form__field {
     padding-top: 15px;
     padding-bottom: 14px;
     border:0;
@@ -194,13 +194,13 @@ img{
     color: #555;
 }
 
-.signup-form-field:focus{
+.signup-form__field:focus{
     border-color: #000;
     font-weight: 600;
     color: #000;
 }
 
-.signup-form-submit {
+.signup-form__submit {
     display: block;
     width: 100%;
     cursor: pointer;
@@ -216,13 +216,13 @@ img{
     line-height: 19px;
 }
 
-.signup-form-notice {
+.signup-form__notice {
     font-size: 11px;
     line-height: 15px;
     text-align: center;
 }
 
-.signup-form-notice-link {
+.signup-form__notice-link {
     font-weight: 500;
     color: var(--red);
 }
@@ -233,7 +233,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-    .hero {
+    .hero__{
         background-image: url(../img/rectangle@2x.jpg);
     }
 }
